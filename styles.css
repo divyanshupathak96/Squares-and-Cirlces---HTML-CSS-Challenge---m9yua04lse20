@@ -1,9 +1,20 @@
-.outer-square {
-  /* your css goes here */
+body{
+    width: 600px;
+    height: 600px;
 }
-.inner-square {
-  /* your css goes here */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
-.circle {
-  /* your css goes here */
+.square{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: green;
+}
+
+.circle:nth-child(even){
+    background-color: blue;
+    border-radius: 50%;
 }
